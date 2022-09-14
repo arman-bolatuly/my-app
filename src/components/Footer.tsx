@@ -74,8 +74,8 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Logo />
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+           <Box color={useColorModeValue('gray.900', 'red')} fontWeight={50}>AppTime</Box>
+          <Text>© 2022 Application time. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>
               <FaTwitter />

@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
@@ -18,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
-import {Link as Router} from "react-router-dom";
+import {Link as RouterLink} from "react-router-dom";
 
 
 export default function Header() {
@@ -46,7 +45,7 @@ export default function Header() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} display={{ md: 'none' }}>s
             
           </Box>
         ) : null}

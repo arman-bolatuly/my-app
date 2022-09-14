@@ -2,7 +2,6 @@ import {
     Avatar,
     Box,
     chakra,
-    Container,
     Flex,
     Icon,
     SimpleGrid,
@@ -172,7 +171,9 @@ import {
           columns={{ base: 1, xl: 2 }}
           spacing={'20'}
           mt={16}
-          mx={'auto'}>
+          mx={'auto'}
+          key={'id'}>
+           
           {testimonials.map((cardInfo, index) => (
             <TestimonialCard {...cardInfo} index={index} />
           ))}

@@ -23,9 +23,37 @@ import {
   MdEmail,
   MdLocationOn,
 } from 'react-icons/md';
-import { BsPerson } from 'react-icons/bs';
+import { useState, useEffect } from "react"
+import { expressService } from '../axiosConfig';
+
+
+const initialState = {
+  nick_name: "",
+  phone_number: "",
+  email: "",
+  //message: "",
+}
 
 export default function Contact() {
+  const [bell, setBell] = useState(initialState);
+  const handleSubmit = async (e:any) => {
+    e.preventDefault()
+    const newBell = {
+      nick_name: bell.nick_name,
+      phone_number: bell.phone_number,
+      email: bell.email,
+      //message: bell.message,
+    }
+    const res = await expressService.post("/client_information", newBell)
+    setBell(initialState);
+  }
+
+  function handleChange(e: any) {
+    setBell((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }))
+  }
   return (
     <Container bgGradient={useColorModeValue(
       'radial(orange.600 1px, transparent 1px)',
@@ -56,7 +84,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +91-988888888
+                        +7(707)7663169
                       </Button>
                       <Button
                         size="md"
@@ -66,7 +94,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        hello@abc.com
+                        apptime@apptime.com
                       </Button>
                       <Button
                         size="md"
@@ -76,11 +104,11 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                        Karnavati, India
+                        Astana, Kazakhstan
                       </Button>
                     </VStack>
                   </Box>
-                  <HStack
+                  {/* <HStack
                     mt={{ lg: 10, md: 10 }}
                     spacing={5}
                     px={5}
@@ -109,51 +137,23 @@ export default function Contact() {
                       _hover={{ bg: '#0D74FF' }}
                       //icon={<BsDiscord size="28px" />}
                     />
-                  </HStack>
+                  </HStack> */}
                 </Box>
               </WrapItem>
               <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
-                      <FormControl id="name">
-                        <FormLabel>Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement
-                            pointerEvents="none"
-                            children={<BsPerson color="gray.800" />}
-                          />
-                          <Input type="text" size="md" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
-                          <InputLeftElement
-                            pointerEvents="none"
-                            //children={<MdOutlineEmail color="gray.800" />}
-                          />
-                          <Input type="text" size="md" />
-                        </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Message</FormLabel>
-                        <Textarea
-                          borderColor="gray.300"
-                          _hover={{
-                            borderRadius: 'gray.300',
-                          }}
-                          placeholder="message"
-                        />
-                      </FormControl>
-                      <FormControl id="name" float="right">
-                        <Button
-                          variant="solid"
-                          bg="#0D74FF"
-                          color="white"
-                          _hover={{}}>
-                          Send Message
-                        </Button>
+                      <FormControl onSubmit={handleSubmit}>
+                          <FormLabel>Your Name</FormLabel>
+                          <Input type="text" name="nick_name" value={bell.nick_name} onChange={handleChange} borderColor="#E0E1E7"/>
+                          <FormLabel>Your Phone</FormLabel>
+                          <Input type="text" name="phone_number" value={bell.phone_number} onChange={handleChange} borderColor="#E0E1E7"/>
+                          <FormLabel>Mail</FormLabel>
+                          <Input type="email" name="email" value={bell.email} onChange={handleChange} borderColor="#E0E1E7"/>
+                          {/* <FormLabel>Message</FormLabel>
+                          <textarea placeholder="message" name="message" value={bell.message} onChange={handleChange}/> */}
+                          <Button type="submit">Send Message</Button>
                       </FormControl>
                     </VStack>
                   </Box>
@@ -166,3 +166,8 @@ export default function Contact() {
     </Container>
   );
 }
+
+// borderColor="gray.300"
+// _hover={{
+//   borderRadius: 'gray.300',
+// }}

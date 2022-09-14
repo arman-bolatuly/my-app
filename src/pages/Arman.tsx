@@ -42,24 +42,24 @@ import {
           </Flex>
   
           <Box p={6}>
-            <Stack spacing={0} align={'center'} mb={5}>
+            <Stack spacing={0} align={'center'} mb={5} display={'flex'} justifyContent={'center'}>
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                Arman Bolatuly
+                Arman B.
               </Heading>
-              <Text color={'gray.500'}>Full Stack Developer</Text>
+              <Text color={'gray.500'}>React-Node Dev.</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>
               <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>23k</Text>
+                <Text fontWeight={600}>1</Text>
                 <Text fontSize={'sm'} color={'gray.500'}>
-                  Followers
+                Experience
                 </Text>
               </Stack>
               <Stack spacing={0} align={'center'}>
-                <Text fontWeight={600}>23k</Text>
+                <Text fontWeight={600}>3</Text>
                 <Text fontSize={'sm'} color={'gray.500'}>
-                  Followers
+                Сompleted Projects
                 </Text>
               </Stack>
             </Stack>
@@ -74,7 +74,7 @@ import {
                 transform: 'translateY(-2px)',
                 boxShadow: 'lg',
               }}>
-              Follow
+              Request a resume
             </Button>
           </Box>
         </Box>

@@ -23,10 +23,10 @@ export const App = () => (
     <Header />
     <Box paddingTop={10}>
       <Features />
-      <Comments />
       <ArticleList />
-      <Contact />
+      <Comments />
       <Team/>
+      <Contact />
     </Box>
     <Footer />
   </ChakraProvider>

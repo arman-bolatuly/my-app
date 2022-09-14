@@ -9,7 +9,7 @@ function Team() {
   return (
     <>
       <Text display="flex" justifyContent='center' marginTop={5}>Наша команда</Text>
-      <Box display='flex' mx='20%' justifyContent='center'>
+      <Box display='flex' flexWrap="wrap" mx='20%' justifyContent='center'>
         
         <Box px={5}>
             <Arman/>
