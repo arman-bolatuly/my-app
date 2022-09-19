@@ -4,18 +4,13 @@ import {
   Box,
   Heading,
   Text,
-  IconButton,
   Button,
   VStack,
-  HStack,
   Wrap,
   WrapItem,
   FormControl,
   FormLabel,
   Input,
-  InputGroup,
-  InputLeftElement,
-  Textarea,
   useColorModeValue,
 } from '@chakra-ui/react';
 import {
@@ -23,7 +18,7 @@ import {
   MdEmail,
   MdLocationOn,
 } from 'react-icons/md';
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { expressService } from '../axiosConfig';
 
 
@@ -46,6 +41,7 @@ export default function Contact() {
     }
     const res = await expressService.post("/client_information", newBell)
     setBell(initialState);
+    console.log(newBell);
   }
 
   function handleChange(e: any) {
@@ -66,7 +62,9 @@ export default function Contact() {
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}>
+            <Text fontSize={30} display="flex" justifyContent="center" mb="5">Мы хотели бы услышать от вас</Text>
           <Box p={4}>
+            
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
@@ -114,17 +112,18 @@ export default function Contact() {
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
-                      <FormControl onSubmit={handleSubmit}>
+                      <form onSubmit={handleSubmit}>
                           <FormLabel>Your Name</FormLabel>
-                          <Input type="text" name="nick_name" value={bell.nick_name} onChange={handleChange} borderColor="#E0E1E7"/>
+                          {/* borderColor="#E0E1E7" */}
+                          <input type="text" name="nick_name" value={bell.nick_name} onChange={handleChange} style={{borderColor:'#E0E1E7', }}/>
                           <FormLabel>Your Phone</FormLabel>
-                          <Input type="text" name="phone_number" value={bell.phone_number} onChange={handleChange} borderColor="#E0E1E7"/>
+                          <input type="text" name="phone_number" value={bell.phone_number} onChange={handleChange}/>
                           <FormLabel>Mail</FormLabel>
-                          <Input type="email" name="email" value={bell.email} onChange={handleChange} borderColor="#E0E1E7"/>
+                          <input type="email" name="email" value={bell.email} onChange={handleChange}/><br />
                           {/* <FormLabel>Message</FormLabel>
                           <textarea placeholder="message" name="message" value={bell.message} onChange={handleChange}/> */}
-                          <Button type="submit">Send Message</Button>
-                      </FormControl>
+                          <button type="submit">Send Message</button>
+                      </form>
                     </VStack>
                   </Box>
                 </Box>

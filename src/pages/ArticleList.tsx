@@ -58,7 +58,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'7xl'} p="12">
+    <Container maxW={'7xl'} paddingTop="12">
       <Heading as="h1">Stories by Chakra Templates</Heading>
       <Box
         marginTop={{ base: '1', sm: '5' }}

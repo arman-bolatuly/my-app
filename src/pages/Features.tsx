@@ -42,7 +42,7 @@ import {
   
   export default function Features() {
     return (
-      <Container maxW={'5xl'} paddingTop={20}>
+      <Container maxW={'7xl'} marginTop='20'>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
             <Text
@@ -56,10 +56,10 @@ import {
               rounded={'md'}>
               Our Story
             </Text>
-            <Heading>A digital Product design agency</Heading>
+            <Heading>Ваш технологический партнер для инновационных и эффективных цифровых решений.</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore
+            Достаточно маленький, чтобы заботиться
+            Достаточно профисиональный, чтобы принести успех.
             </Text>
             <Stack
               spacing={4}
