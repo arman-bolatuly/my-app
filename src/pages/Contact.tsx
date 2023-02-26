@@ -62,7 +62,7 @@ export default function Contact() {
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
           p={{ sm: 5, md: 5, lg: 16 }}>
-            <Text fontSize={30} display="flex" justifyContent="center" mb="5">Мы хотели бы услышать от вас</Text>
+            <Text fontSize={30} display="flex" justifyContent="center" mb="5">We would like to hear from you</Text>
           <Box p={4}>
             
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
@@ -82,7 +82,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +7(707)7663169
+                        +7(777) 777 77 77
                       </Button>
                       <Button
                         size="md"
@@ -92,7 +92,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        apptime@apptime.com
+                        kargotek@gmail.com
                       </Button>
                       <Button
                         size="md"
@@ -102,7 +102,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                        Astana, Kazakhstan
+                        Almaty, Kazakhstan
                       </Button>
                     </VStack>
                   </Box>
@@ -122,7 +122,7 @@ export default function Contact() {
                           <input type="email" name="email" value={bell.email} onChange={handleChange}/><br />
                           {/* <FormLabel>Message</FormLabel>
                           <textarea placeholder="message" name="message" value={bell.message} onChange={handleChange}/> */}
-                          <button type="submit">Send Message</button>
+                          <button type="submit">Send</button>
                       </form>
                     </VStack>
                   </Box>

@@ -56,10 +56,9 @@ import {
               rounded={'md'}>
               Our Story
             </Text>
-            <Heading>Ваш технологический партнер для инновационных и эффективных цифровых решений.</Heading>
+            <Heading>Kargotek is a service platform for end-to-end analytics for logistics, which deals with online data transfer.</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-            Достаточно маленький, чтобы заботиться
-            Достаточно профисиональный, чтобы принести успех.
+            We help logisticians solve the problem by improving the efficiency of the supply chain by significantly "reducing the cost of manual labor and improving the quality of service."
             </Text>
             <Stack
               spacing={4}
