@@ -44,9 +44,9 @@ import {
           <Box p={6}>
             <Stack spacing={0} align={'center'} mb={5}>
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                Ann D.
+                Farida T.
               </Heading>
-              <Text color={'gray.500'}>UI/UX Designer</Text>
+              <Text color={'gray.500'}>CEO</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>

@@ -49,9 +49,9 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
         src="https://100k-faces.glitch.me/random-image"
         alt={`Avatar of ${props.name}`}
       />
-      <Text fontWeight="medium">{props.name}</Text>
+      <Text fontWeight="medium">Alikhan B</Text>
       <Text>—</Text>
-      <Text>{props.date.toLocaleDateString()}</Text>
+      <Text>2023-02-21</Text>
     </HStack>
   );
 };
@@ -59,7 +59,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 const ArticleList = () => {
   return (
     <Container maxW={'7xl'} paddingTop="12">
-      <Heading as="h1">Stories by Chakra Templates</Heading>
+      <Heading as="h1">Our advantages</Heading>
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"
@@ -108,7 +108,7 @@ const ArticleList = () => {
           <BlogTags tags={['Engineering', 'Product']} />
           <Heading marginTop="1">
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-              Blog article title
+            We are different
             </Link>
           </Heading>
           <Text
@@ -116,10 +116,7 @@ const ArticleList = () => {
             marginTop="2"
             color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            that we help logisticians and customers solve problems by obtaining delivery information, obtaining geolocation data and cargo status, which allows you to track the cargo in transit for oversized cargo.
           </Text>
           <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} />
         </Box>

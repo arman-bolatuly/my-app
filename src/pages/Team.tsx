@@ -8,7 +8,7 @@ import Temir from './Temir'
 function Team() {
   return (
     <>
-      <Text display="flex" justifyContent='center' marginTop={5}>Наша команда</Text>
+      <Text display="flex" justifyContent='center' marginTop={5}>Our Team Members</Text>
       <Box display='flex' flexWrap="wrap" mx='20%' justifyContent='center'>
         
         <Box px={5}>
