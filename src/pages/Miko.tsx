@@ -46,7 +46,7 @@ import {
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
                 Aruzhan G.
               </Heading>
-              <Text color={'gray.500'}>Technical director.</Text>
+              <Text color={'gray.500'}>Product manager</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>

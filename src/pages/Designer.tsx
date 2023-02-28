@@ -46,7 +46,7 @@ import {
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
                 Farida T.
               </Heading>
-              <Text color={'gray.500'}>CEO</Text>
+              <Text color={'gray.500'}>UI/UX designer</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>

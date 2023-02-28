@@ -74,7 +74,7 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-           <Box color={useColorModeValue('gray.900', 'red')} fontWeight={50}>AppTime</Box>
+           <Box color={useColorModeValue('gray.900', 'red')} fontWeight={50}>Cargotek</Box>
           <Text>© 2022 Application time. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'Twitter'} href={'#'}>

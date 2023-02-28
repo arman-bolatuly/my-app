@@ -46,7 +46,7 @@ import {
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
                 Zhanel X.
               </Heading>
-              <Text color={'gray.500'}>Manager</Text>
+              <Text color={'gray.500'}>Backend developer</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>
