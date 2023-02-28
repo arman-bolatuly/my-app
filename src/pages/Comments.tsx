@@ -13,7 +13,7 @@ import {
       name: 'Brandon P.',
       role: 'Chief Marketing Officer',
       content:
-        'It really saves me time and effort. It is exactly what our business has been lacking. Kargotek is the most valuable business resource we have EVER purchased. After using Kargotek my business skyrocketed!',
+        'It really saves me time and effort. It is exactly what our business has been lacking. Cargotek is the most valuable business resource we have EVER purchased. After using Cargotek my business skyrocketed!',
       avatar:
         'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
     },
@@ -21,7 +21,7 @@ import {
       name: 'Krysta B.',
       role: 'Entrepreneur',
       content:
-        "I didn't even need training. I have gotten at least 50 times the value from Kargotek. I made back the purchase price in just 48 hours!",
+        "I didn't even need training. I have gotten at least 50 times the value from Cargotek. I made back the purchase price in just 48 hours!",
       avatar:
         'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
     },
@@ -29,7 +29,7 @@ import {
       name: 'Darcy L.',
       role: 'Movie star',
       content:
-        "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, Kargotek is the coolest, most happening thing around! I love Kargotek!",
+        "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, Cargotek is the coolest, most happening thing around! I love Cargotek!",
       avatar:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80',
     },
@@ -37,7 +37,7 @@ import {
       name: 'Daniel T.',
       role: 'Musician',
       content:
-        'I am so pleased with this product. Kargotek is both attractive and highly adaptable. Without Kargotek, we would have gone bankrupt by now. Thank you for creating this product!',
+        'I am so pleased with this product. Cargotek is both attractive and highly adaptable. Without Cargotek, we would have gone bankrupt by now. Thank you for creating this product!',
       avatar:
         'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
     },
@@ -137,36 +137,6 @@ import {
         justifyContent={'center'}
         direction={'column'}
         width={'full'}>
-        <Box width={{ base: 'full', sm: 'lg', lg: '7xl' }} margin={'auto'}>
-          <chakra.h3
-            fontFamily={'Work Sans'}
-            fontWeight={'bold'}
-            fontSize={20}
-            textTransform={'uppercase'}
-            color={'purple.400'}>
-            People love us
-          </chakra.h3>
-          <chakra.h1
-            py={5}
-            fontSize={48}
-            fontFamily={'Work Sans'}
-            fontWeight={'bold'}
-            color={useColorModeValue('gray.700', 'gray.50')}>
-            You're in good company
-          </chakra.h1>
-          <chakra.h2
-            margin={'auto'}
-            width={'70%'}
-            fontFamily={'Inter'}
-            fontWeight={'medium'}
-            color={useColorModeValue('gray.500', 'gray.400')}>
-            See why over{' '}
-            <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
-              150,000+
-            </chakra.strong>{' '}
-            influencers use EEZY to manage their social media content!
-          </chakra.h2>
-        </Box>
         <SimpleGrid
           columns={{ base: 1, xl: 2 }}
           spacing={'20'}

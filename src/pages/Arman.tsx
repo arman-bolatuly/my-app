@@ -46,7 +46,7 @@ import {
               <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
                 Svetlana K.
               </Heading>
-              <Text color={'gray.500'}>Director.</Text>
+              <Text color={'gray.500'}>Frotend developer.</Text>
             </Stack>
   
             <Stack direction={'row'} justify={'center'} spacing={6}>

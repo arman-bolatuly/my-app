@@ -35,7 +35,7 @@ export default function Header() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Box color={useColorModeValue('gray.900', 'red')} fontWeight={50}>AppTime</Box>
+            <Box color={useColorModeValue('gray.900', 'red')} fontWeight={50}>Cargotek</Box>
             {/* <RouterLink to={'/Features'}>Features</RouterLink>
             <RouterLink to={'/Features'}>Features</RouterLink> */}
           </HStack>
